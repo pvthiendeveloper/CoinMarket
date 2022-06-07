@@ -4,4 +4,13 @@
     <style name="Theme.CoinMarket" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/purple_700</item>
     </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen.IconBackground">
+        <!--   Replaces the icon in the center of the screen -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <!--  This theme applies after the splash screen has dismissed -->
+        <item name="postSplashScreenTheme">@style/Theme.CoinMarket</item>
+        <!--  Changing the Background    -->
+        <item name="windowSplashScreenBackground">@color/purple_200</item>
+    </style>
 </resources>
