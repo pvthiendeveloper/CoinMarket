@@ -17,13 +17,8 @@ android {
     }
 
     buildTypes {
-        debug {
-            isDebuggable = true
-            isMinifyEnabled = false
-        }
         release {
-            isDebuggable = false
-            isMinifyEnabled = true
+            isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -63,5 +58,4 @@ dependencies {
     implementation(Lib.Android.COMPOSE_DEBUG_TOOLING)
     implementation(Lib.Android.ACTIVITY_COMPOSE)
     implementation(Lib.Android.SPLASH_SCREEN_API)
-    implementation(Lib.Android.COMPOSE_NAVIGATION)
 }

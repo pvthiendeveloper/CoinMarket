@@ -11,6 +11,6 @@
         <!--  This theme applies after the splash screen has dismissed -->
         <item name="postSplashScreenTheme">@style/Theme.CoinMarket</item>
         <!--  Changing the Background    -->
-        <item name="windowSplashScreenBackground">@color/dark_gunmetal</item>
+        <item name="windowSplashScreenBackground">@color/purple_200</item>
     </style>
 </resources>
