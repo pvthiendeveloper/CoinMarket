@@ -13,4 +13,8 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "CoinMarket"
-include ':app'
+include(":app")
+include(":core")
+include(":core:navigation")
+include(":features")
+include(":features:onboarding")
