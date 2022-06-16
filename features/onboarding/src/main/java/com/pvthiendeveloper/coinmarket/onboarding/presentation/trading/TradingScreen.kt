@@ -12,7 +12,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.pvthiendeveloper.coinmarket.ui.theme.CoinMarketTheme
 
 @Composable
-fun TradingScreen() {
+internal fun TradingScreen() {
     CoinMarketTheme {
         Scaffold {
             Box(

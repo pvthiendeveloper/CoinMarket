@@ -7,7 +7,6 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import com.pvthiendeveloper.coinmarket.navigation.CoinMarketRoute
-import com.pvthiendeveloper.coinmarket.navigation.CoinMarketScreens
 import com.pvthiendeveloper.coinmarket.onboarding.nav.onBoardingNavigation
 
 class MainActivity : ComponentActivity() {

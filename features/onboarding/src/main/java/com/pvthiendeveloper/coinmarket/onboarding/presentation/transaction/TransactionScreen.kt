@@ -9,8 +9,8 @@ import androidx.compose.ui.Modifier
 import com.pvthiendeveloper.coinmarket.ui.theme.CoinMarketTheme
 
 @Composable
-fun TransactionScreen() {
-    CoinMarketTheme() {
+internal fun TransactionScreen() {
+    CoinMarketTheme {
         Box(
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center

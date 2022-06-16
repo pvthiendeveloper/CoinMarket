@@ -38,4 +38,7 @@ android {
 
 dependencies {
     implementation(Lib.Android.COMPOSE_MATERIAL)
+
+    implementation(TestLib.JUNIT)
+    implementation(TestLib.ANDROID_JUNIT)
 }

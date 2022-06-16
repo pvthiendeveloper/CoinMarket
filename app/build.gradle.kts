@@ -62,4 +62,7 @@ dependencies {
     implementation(Lib.Android.ACTIVITY_COMPOSE)
     implementation(Lib.Android.COMPOSE_NAVIGATION)
     implementation(Lib.Android.SPLASH_SCREEN_API)
+
+    implementation(TestLib.JUNIT)
+    implementation(TestLib.ANDROID_JUNIT)
 }

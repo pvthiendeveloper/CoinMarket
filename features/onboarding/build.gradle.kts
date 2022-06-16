@@ -50,4 +50,7 @@ dependencies {
     implementation(Lib.Android.COMPOSE_DEBUG_TOOLING)
     implementation(Lib.Android.ACTIVITY_COMPOSE)
     implementation(Lib.Android.COMPOSE_NAVIGATION)
+
+    implementation(TestLib.JUNIT)
+    implementation(TestLib.ANDROID_JUNIT)
 }

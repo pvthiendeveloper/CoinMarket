@@ -31,4 +31,6 @@ android {
 }
 
 dependencies {
+    implementation(TestLib.JUNIT)
+    implementation(TestLib.ANDROID_JUNIT)
 }
