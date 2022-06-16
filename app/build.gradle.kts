@@ -49,6 +49,7 @@ android {
 
 dependencies {
     implementation(project(":core:navigation"))
+    implementation(project(":features:onboarding"))
 
     implementation(Lib.Kotlin.KTX_CORE)
     implementation(Lib.Kotlin.KT_STD)
@@ -59,5 +60,6 @@ dependencies {
     implementation(Lib.Android.COMPOSE_TOOLING)
     implementation(Lib.Android.COMPOSE_DEBUG_TOOLING)
     implementation(Lib.Android.ACTIVITY_COMPOSE)
+    implementation(Lib.Android.COMPOSE_NAVIGATION)
     implementation(Lib.Android.SPLASH_SCREEN_API)
 }

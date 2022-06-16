@@ -28,6 +28,12 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = Lib.Android.COMPOSE_COMPILER_VERSION
+    }
 }
 
 dependencies {
