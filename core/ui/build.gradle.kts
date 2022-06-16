@@ -31,5 +31,5 @@ android {
 }
 
 dependencies {
-
+    implementation(Lib.Android.COMPOSE_MATERIAL)
 }
