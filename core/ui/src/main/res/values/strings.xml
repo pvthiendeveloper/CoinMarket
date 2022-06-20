@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CoinMarket</string>
+
+    <string name="onboarding_button_next">Next</string>
+    <string name="onboarding_title_trade">Trade anytime anywhere</string>
+    <string name="onboarding_title_invest">Save and invest at the same time</string>
+    <string name="onboarding_title_transaction">Transact fast and easy</string>
+    <string name="onboarding_lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</string>
+</resources>

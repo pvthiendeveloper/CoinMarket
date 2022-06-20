@@ -3,6 +3,7 @@
 
     <style name="Theme.CoinMarket" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/dark_gunmetal</item>
+        <item name="android:windowBackground">@color/dark_gunmetal</item>
     </style>
 
     <style name="Theme.App.Starting" parent="Theme.SplashScreen.IconBackground">

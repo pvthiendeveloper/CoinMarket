@@ -48,18 +48,14 @@ android {
 }
 
 dependencies {
+    implementation(project(":core:ui"))
     implementation(project(":core:navigation"))
     implementation(project(":features:onboarding"))
+    implementation(project(":features:dashboard"))
 
-    implementation(Lib.Kotlin.KTX_CORE)
-    implementation(Lib.Kotlin.KT_STD)
-
-    implementation(Lib.Android.APP_COMPAT)
-    implementation(Lib.Android.MATERIAL_DESIGN)
     implementation(Lib.Android.COMPOSE_MATERIAL)
     implementation(Lib.Android.COMPOSE_TOOLING)
     implementation(Lib.Android.COMPOSE_DEBUG_TOOLING)
-    implementation(Lib.Android.ACTIVITY_COMPOSE)
     implementation(Lib.Android.COMPOSE_NAVIGATION)
     implementation(Lib.Android.SPLASH_SCREEN_API)
 

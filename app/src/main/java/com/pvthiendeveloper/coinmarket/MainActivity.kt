@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
+import com.pvthiendeveloper.coinmarket.dashboard.nav.dashboardNavigation
 import com.pvthiendeveloper.coinmarket.navigation.CoinMarketRoute
 import com.pvthiendeveloper.coinmarket.onboarding.nav.onBoardingNavigation
 
@@ -19,9 +20,10 @@ class MainActivity : ComponentActivity() {
 
             NavHost(
                 navController = navController,
-                startDestination = CoinMarketRoute.OnBoarding.name
+                startDestination = CoinMarketRoute.OnBoarding.route
             ) {
                 onBoardingNavigation(navController)
+                dashboardNavigation(navController)
             }
         }
     }

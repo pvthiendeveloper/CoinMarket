@@ -12,23 +12,23 @@ import com.pvthiendeveloper.coinmarket.onboarding.presentation.transaction.Trans
 
 fun NavGraphBuilder.onBoardingNavigation(navController: NavHostController) {
     navigation(
-        startDestination = CoinMarketScreens.OnBoardTrading.route,
-        route = CoinMarketRoute.OnBoarding.name
+        startDestination = CoinMarketScreens.OnBoardTrading.name,
+        route = CoinMarketRoute.OnBoarding.route
     ) {
         composable(
-            route = CoinMarketScreens.OnBoardTrading.route
+            route = CoinMarketScreens.OnBoardTrading.name
         ) {
             TradingScreen(navController)
         }
         composable(
-            route = CoinMarketScreens.OnBoardInvesting.route
+            route = CoinMarketScreens.OnBoardInvesting.name
         ) {
-            InvestingScreen()
+            InvestingScreen(navController)
         }
         composable(
-            route = CoinMarketScreens.OnBoardTransaction.route
+            route = CoinMarketScreens.OnBoardTransaction.name
         ) {
-            TransactionScreen()
+            TransactionScreen(navController)
         }
     }
 }
