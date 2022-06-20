@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
                 navController = navController,
                 startDestination = CoinMarketRoute.OnBoarding.name
             ) {
-                onBoardingNavigation()
+                onBoardingNavigation(navController)
             }
         }
     }
