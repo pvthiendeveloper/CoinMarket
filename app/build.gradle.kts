@@ -52,6 +52,11 @@ dependencies {
     implementation(project(":core:navigation"))
     implementation(project(":features:onboarding"))
     implementation(project(":features:dashboard"))
+    implementation(project(":features:activity"))
+    implementation(project(":features:home"))
+    implementation(project(":features:market"))
+    implementation(project(":features:trade"))
+    implementation(project(":features:wallet"))
 
     implementation(Lib.Android.COMPOSE_MATERIAL)
     implementation(Lib.Android.COMPOSE_TOOLING)

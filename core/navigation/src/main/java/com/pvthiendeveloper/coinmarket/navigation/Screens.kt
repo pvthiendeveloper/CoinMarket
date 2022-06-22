@@ -1,14 +1,21 @@
 package com.pvthiendeveloper.coinmarket.navigation
 
-sealed class CoinMarketScreens(val name: String) {
-    object OnBoardTrading : CoinMarketScreens("trading")
-    object OnBoardInvesting : CoinMarketScreens("investing")
-    object OnBoardTransaction : CoinMarketScreens("transaction")
-    object Dashboard : CoinMarketScreens("dashboard-screen")
+sealed class CMScreens(val name: String) {
+    object OnBoardTrading : CMScreens("trading")
+    object OnBoardInvesting : CMScreens("investing")
+    object OnBoardTransaction : CMScreens("transaction")
+    object Dashboard : CMScreens("dashboard-screen")
+    object Home : CMScreens("home")
+    object Market : CMScreens("market")
+    object Trade : CMScreens("trade")
+    object Activity : CMScreens("activity")
+    object Wallet : CMScreens("wallet")
 }
 
-sealed class CoinMarketRoute(val route: String) {
-    object OnBoarding : CoinMarketRoute("on-boarding")
+sealed class CMRoute(val route: String) {
+    object Root : CMRoute("root")
 
-    object Dashboard : CoinMarketRoute("dashboard")
+    object OnBoarding : CMRoute("on-boarding")
+
+    object Dashboard : CMRoute("dashboard")
 }

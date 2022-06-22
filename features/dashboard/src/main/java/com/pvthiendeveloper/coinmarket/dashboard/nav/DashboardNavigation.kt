@@ -5,16 +5,18 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import com.pvthiendeveloper.coinmarket.dashboard.presentation.DashboardScreen
-import com.pvthiendeveloper.coinmarket.navigation.CoinMarketRoute
-import com.pvthiendeveloper.coinmarket.navigation.CoinMarketScreens
+import com.pvthiendeveloper.coinmarket.navigation.CMRoute
+import com.pvthiendeveloper.coinmarket.navigation.CMScreens
 
-fun NavGraphBuilder.dashboardNavigation(navController: NavHostController) {
+fun NavGraphBuilder.dashboardNavigation(
+    navController: NavHostController,
+) {
     navigation(
-        startDestination = CoinMarketScreens.Dashboard.name,
-        route = CoinMarketRoute.Dashboard.route
+        route = CMRoute.Dashboard.route,
+        startDestination = CMScreens.Dashboard.name,
     ) {
         composable(
-            route = CoinMarketScreens.Dashboard.name
+            route = CMScreens.Dashboard.name
         ) {
             DashboardScreen(navController)
         }

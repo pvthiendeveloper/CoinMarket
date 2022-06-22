@@ -14,7 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.pvthiendeveloper.coinmarket.navigation.CoinMarketScreens
+import com.pvthiendeveloper.coinmarket.navigation.CMScreens
 import com.pvthiendeveloper.coinmarket.onboarding.R
 import com.pvthiendeveloper.coinmarket.ui.resource.StringResource
 import com.pvthiendeveloper.coinmarket.ui.theme.CoinMarketTheme
@@ -52,7 +52,7 @@ internal fun InvestingScreen(navController: NavHostController) {
                 Spacer(modifier = Modifier.height(40.dp))
                 Button(
                     onClick = {
-                        navController.navigate(CoinMarketScreens.OnBoardTransaction.name)
+                        navController.navigate(CMScreens.OnBoardTransaction.name)
                     },
                     colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.secondary),
                     shape = RoundedCornerShape(16.dp),

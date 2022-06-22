@@ -16,8 +16,13 @@
             <option value="$PROJECT_DIR$/core/navigation" />
             <option value="$PROJECT_DIR$/core/ui" />
             <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/features/activity" />
             <option value="$PROJECT_DIR$/features/dashboard" />
+            <option value="$PROJECT_DIR$/features/home" />
+            <option value="$PROJECT_DIR$/features/market" />
             <option value="$PROJECT_DIR$/features/onboarding" />
+            <option value="$PROJECT_DIR$/features/trade" />
+            <option value="$PROJECT_DIR$/features/wallet" />
           </set>
         </option>
       </GradleProjectSettings>

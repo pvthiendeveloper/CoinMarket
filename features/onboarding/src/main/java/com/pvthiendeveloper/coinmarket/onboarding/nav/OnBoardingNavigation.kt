@@ -4,29 +4,29 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
-import com.pvthiendeveloper.coinmarket.navigation.CoinMarketRoute
-import com.pvthiendeveloper.coinmarket.navigation.CoinMarketScreens
+import com.pvthiendeveloper.coinmarket.navigation.CMRoute
+import com.pvthiendeveloper.coinmarket.navigation.CMScreens
 import com.pvthiendeveloper.coinmarket.onboarding.presentation.investing.InvestingScreen
 import com.pvthiendeveloper.coinmarket.onboarding.presentation.trading.TradingScreen
 import com.pvthiendeveloper.coinmarket.onboarding.presentation.transaction.TransactionScreen
 
 fun NavGraphBuilder.onBoardingNavigation(navController: NavHostController) {
     navigation(
-        startDestination = CoinMarketScreens.OnBoardTrading.name,
-        route = CoinMarketRoute.OnBoarding.route
+        route = CMRoute.OnBoarding.route,
+        startDestination = CMScreens.OnBoardTrading.name,
     ) {
         composable(
-            route = CoinMarketScreens.OnBoardTrading.name
+            route = CMScreens.OnBoardTrading.name
         ) {
             TradingScreen(navController)
         }
         composable(
-            route = CoinMarketScreens.OnBoardInvesting.name
+            route = CMScreens.OnBoardInvesting.name
         ) {
             InvestingScreen(navController)
         }
         composable(
-            route = CoinMarketScreens.OnBoardTransaction.name
+            route = CMScreens.OnBoardTransaction.name
         ) {
             TransactionScreen(navController)
         }
